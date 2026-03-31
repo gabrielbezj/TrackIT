@@ -1,9 +1,20 @@
+using TrackIT.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    var report = await Lab1DemoService.BuildReportAsync();
+    foreach (var line in report.ToConsoleLines())
+    {
+        Console.WriteLine(line);
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

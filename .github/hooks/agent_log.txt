@@ -1,0 +1,48 @@
+[2026-03-31T20:06:30] ManualTest
+{"test":"ok"}
+
+
+[2026-03-31T20:08:13] UserPromptSubmit
+{"timestamp":"2026-03-31T18:08:13.359Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"+áaljem testnu poruku da vidim radi li mi hook","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T20:10:05] UserPromptSubmit
+{"timestamp":"2026-03-31T18:10:04.489Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"Iako si mi napravio sve, idimo task po task i objasnjavaj mi kako sto radi","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T20:10:14] PreToolUse
+{"timestamp":"2026-03-31T18:10:13.724Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\Services\\Lab1DemoService.cs","startLine":1,"endLine":320},"tool_use_id":"call_mcsUkWWf8zOVM3DrRTrzx6uF__vscode-1774979224848","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T20:10:14] PreToolUse
+{"timestamp":"2026-03-31T18:10:13.771Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\Program.cs","startLine":1,"endLine":260},"tool_use_id":"call_6DkCY9k07VgGSUx4V7igKlLI__vscode-1774979224847","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+{"timestamp":"2026-03-31T18:10:13.739Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"list_dir","tool_input":{"path":"c:\\Users\\Gabriel\\TrackIT\\Models"},"tool_use_id":"call_gCt5kJDFCR1B2Fwpfroxsz2H__vscode-1774979224849","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T20:10:21] PreToolUse
+[2026-03-31T20:10:21] PreToolUse
+{"timestamp":"2026-03-31T18:10:20.665Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\Models\\Employee.cs","startLine":1,"endLine":260},"tool_use_id":"call_nHRncjTpyjtPnLroQ2VPsCZd__vscode-1774979224854","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T20:10:21] PreToolUse
+{"timestamp":"2026-03-31T18:10:20.696Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\Models\\Company.cs","startLine":1,"endLine":260},"tool_use_id":"call_2nYT3Dz0eKnC1JORVNClnURH__vscode-1774979224852","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+
+{"timestamp":"2026-03-31T18:10:20.685Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\Models\\AssetAssignment.cs","startLine":1,"endLine":260},"tool_use_id":"call_4Jxa2nHyxWTYP7GgDcjBwRo2__vscode-1774979224856","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T20:10:25] PreToolUse
+{"timestamp":"2026-03-31T18:10:24.913Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\TrackIT.csproj","startLine":1,"endLine":260},"tool_use_id":"call_xk4aoq2u2uPTEbZ9NbZyActf__vscode-1774979224860","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T20:10:25] PreToolUse
+{"timestamp":"2026-03-31T18:10:24.922Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\Views\\Home\\Index.cshtml","startLine":1,"endLine":220},"tool_use_id":"call_E7aMpVR20D4Szu2kgiVgm56P__vscode-1774979224861","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+{"timestamp":"2026-03-31T18:10:24.896Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\Models\\MaintenanceRecord.cs","startLine":1,"endLine":260},"tool_use_id":"call_KMjVvOUlyvCudnDQFume8CLO__vscode-1774979224858","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+{"timestamp":"2026-03-31T18:10:24.934Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\Models\\Vendor.cs","startLine":1,"endLine":260},"tool_use_id":"call_sbLEGsJ6R3o354SWgLS1Wahc__vscode-1774979224857","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T20:10:34] PreToolUse
+[2026-03-31T21:15:19] UserPromptSubmit
+{"timestamp":"2026-03-31T19:15:18.557Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"kako da sad ovo sve pusham na github?","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T21:15:30] PreToolUse
+{"timestamp":"2026-03-31T19:15:30.258Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"run_in_terminal","tool_input":{"command":"git status -sb; git remote -v; git branch --show-current","explanation":"Check git status, configured remotes, and current branch before giving push steps.","goal":"Determine exact GitHub push commands","isBackground":false,"timeout":0},"tool_use_id":"call_Errm3OKyEoMMJ6eZpEn4piYj__vscode-1774979224866","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-03-31T21:15:50] PreToolUse
+{"timestamp":"2026-03-31T19:15:49.966Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"list_dir","tool_input":{"path":"c:\\Users\\Gabriel\\TrackIT"},"tool_use_id":"call_qptJngvgjo3X6QKRRgY4vT5E__vscode-1774979224867","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
