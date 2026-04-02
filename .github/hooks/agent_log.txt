@@ -46,3 +46,39 @@
 [2026-03-31T21:15:50] PreToolUse
 {"timestamp":"2026-03-31T19:15:49.966Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"list_dir","tool_input":{"path":"c:\\Users\\Gabriel\\TrackIT"},"tool_use_id":"call_qptJngvgjo3X6QKRRgY4vT5E__vscode-1774979224867","cwd":"c:\\Users\\Gabriel\\TrackIT"}
 
+[2026-03-31T21:20:47] UserPromptSubmit
+{"timestamp":"2026-03-31T19:20:46.798Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"Kako da provjerim svoje trenutno stanje tokena za copilot?","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T14:56:33] UserPromptSubmit
+{"timestamp":"2026-04-02T12:56:31.928Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"+íto radi postavljeni gitignore?","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T14:56:52] PreToolUse
+{"timestamp":"2026-04-02T12:56:51.896Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"read_file","tool_input":{"filePath":"c:\\Users\\Gabriel\\TrackIT\\.gitignore","startLine":1,"endLine":200},"tool_use_id":"call_quqM3jzOjTnsYCWQNvpJU3vN__vscode-1775123855433","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T14:59:04] UserPromptSubmit
+{"timestamp":"2026-04-02T12:59:03.630Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"objasni mi LINQ","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T15:01:52] UserPromptSubmit
+{"timestamp":"2026-04-02T13:01:51.929Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"objasni mi objektni model mog projektnog zadatka","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T15:03:03] UserPromptSubmit
+{"timestamp":"2026-04-02T13:03:02.534Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"Mo++e","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T15:04:33] UserPromptSubmit
+{"timestamp":"2026-04-02T13:04:32.347Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"Sad mi objasni kako moj trenutni program fukcionira i kako da ga pokrenem i isprobam","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T15:04:43] PreToolUse
+{"timestamp":"2026-04-02T13:04:42.910Z","hook_event_name":"PreToolUse","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","tool_name":"run_in_terminal","tool_input":{"command":"dotnet run --project TrackIT.csproj","explanation":"Run the ASP.NET Core app to verify startup behavior and demo output.","goal":"Confirm how the current program behaves when executed","isBackground":false,"timeout":120000},"tool_use_id":"call_kaJDWeHhO4xhBSErxXdc97fk__vscode-1775123855434","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T15:22:28] UserPromptSubmit
+{"timestamp":"2026-04-02T13:22:28.017Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"+áto zna-ìi da je je okru++enje Development?","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T15:24:07] UserPromptSubmit
+{"timestamp":"2026-04-02T13:24:06.955Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"Objasni mi detaljno +íto radi Program.cs","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T15:26:09] UserPromptSubmit
+{"timestamp":"2026-04-02T13:26:08.800Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"Ja trenutno ovo radim na kompjuteru. Kako da ja ove chatove vidim i na laptopu","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
+[2026-04-02T15:27:09] UserPromptSubmit
+{"timestamp":"2026-04-02T13:27:09.124Z","hook_event_name":"UserPromptSubmit","session_id":"a588a018-6856-443e-a7bd-67c6966b2ed0","transcript_path":"c:\\Users\\Gabriel\\AppData\\Roaming\\Code\\User\\workspaceStorage\\cbb0233a70889177c07b7bb004714d6d\\GitHub.copilot-chat\\transcripts\\a588a018-6856-443e-a7bd-67c6966b2ed0.jsonl","prompt":"mo++e","cwd":"c:\\Users\\Gabriel\\TrackIT"}
+
