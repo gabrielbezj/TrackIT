@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gabriel\\TrackIT\\TrackIT.csproj": {}
+    "C:\\Users\\Gabriel\\Desktop\\Gabre\\ASP.NET\\TrackIT\\TrackIT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gabriel\\TrackIT\\TrackIT.csproj": {
+    "C:\\Users\\Gabriel\\Desktop\\Gabre\\ASP.NET\\TrackIT\\TrackIT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel\\TrackIT\\TrackIT.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel\\Desktop\\Gabre\\ASP.NET\\TrackIT\\TrackIT.csproj",
         "projectName": "TrackIT",
-        "projectPath": "C:\\Users\\Gabriel\\TrackIT\\TrackIT.csproj",
+        "projectPath": "C:\\Users\\Gabriel\\Desktop\\Gabre\\ASP.NET\\TrackIT\\TrackIT.csproj",
         "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriel\\TrackIT\\obj\\",
+        "outputPath": "C:\\Users\\Gabriel\\Desktop\\Gabre\\ASP.NET\\TrackIT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
