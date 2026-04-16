@@ -1,4 +1,5 @@
-﻿@{
+﻿@model HomeDashboardViewModel
+@{
     ViewData["Title"] = "Dashboard";
 }
 
@@ -6,9 +7,70 @@
     <p class="eyebrow">Operations workspace</p>
     <h1>TrackIT Control Dashboard</h1>
     <p class="lead">
-        Navigate across all entities, inspect relationships, and review details quickly.
-        Lab 2 is focused on read-only exploration with consistent list and detail pages.
+        Live snapshot from mock repositories with operational metrics, inventory signals,
+        and quick entry points to every entity view.
     </p>
+</section>
+
+<section class="kpi-grid" aria-label="Core KPI metrics">
+    <article class="kpi-card">
+        <span class="kpi-label">Companies</span>
+        <strong class="kpi-value">@Model.CompanyCount</strong>
+    </article>
+    <article class="kpi-card">
+        <span class="kpi-label">Departments</span>
+        <strong class="kpi-value">@Model.DepartmentCount</strong>
+    </article>
+    <article class="kpi-card">
+        <span class="kpi-label">Employees</span>
+        <strong class="kpi-value">@Model.EmployeeCount</strong>
+    </article>
+    <article class="kpi-card">
+        <span class="kpi-label">Assets</span>
+        <strong class="kpi-value">@Model.AssetCount</strong>
+    </article>
+    <article class="kpi-card kpi-card-warn">
+        <span class="kpi-label">Overdue assignments</span>
+        <strong class="kpi-value">@Model.OverdueAssignmentsCount</strong>
+    </article>
+    <article class="kpi-card kpi-card-warn">
+        <span class="kpi-label">Licenses expiring (30d)</span>
+        <strong class="kpi-value">@Model.LicensesExpiringSoonCount</strong>
+    </article>
+    <article class="kpi-card">
+        <span class="kpi-label">Assets in maintenance</span>
+        <strong class="kpi-value">@Model.InMaintenanceCount</strong>
+    </article>
+    <article class="kpi-card">
+        <span class="kpi-label">Vendors</span>
+        <strong class="kpi-value">@Model.VendorCount</strong>
+    </article>
+</section>
+
+<section class="ops-grid" aria-label="Operational panel">
+    <article class="ops-card">
+        <h2>Operational alerts</h2>
+        <ul class="alert-list">
+            @foreach (var alert in Model.Alerts)
+            {
+                <li class="alert-item alert-@alert.Severity">
+                    <span class="alert-title">@alert.Label</span>
+                    <span class="alert-desc">@alert.Description</span>
+                </li>
+            }
+        </ul>
+        <p class="ops-footnote">Generated at @Model.GeneratedAtUtc.ToString("yyyy-MM-dd HH:mm") UTC</p>
+    </article>
+
+    <article class="ops-card">
+        <h2>Quick actions</h2>
+        <div class="quick-links">
+            <a class="quick-link" asp-controller="AssetAssignment" asp-action="Index">Review assignments</a>
+            <a class="quick-link" asp-controller="SoftwareLicense" asp-action="Index">Review licenses</a>
+            <a class="quick-link" asp-controller="Asset" asp-action="Index">Inspect inventory</a>
+            <a class="quick-link" asp-controller="MaintenanceRecord" asp-action="Index">Open maintenance log</a>
+        </div>
+    </article>
 </section>
 
 <section class="dashboard-grid" aria-label="Entity navigation">
