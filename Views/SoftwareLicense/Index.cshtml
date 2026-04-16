@@ -1,0 +1,39 @@
+@model IReadOnlyList<SoftwareLicense>
+@{
+    ViewData["Title"] = "Software Licenses";
+}
+
+<section class="entity-page">
+    <h1>Software Licenses</h1>
+    <p class="text-muted">License usage and expiry overview.</p>
+
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Asset</th>
+                <th>Type</th>
+                <th>Seats</th>
+                <th>Expires</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.ProductName</td>
+                <td>@item.Asset?.InventoryTag</td>
+                <td>@item.LicenseType</td>
+                <td>@item.SeatsUsed / @item.SeatsPurchased</td>
+                <td>@item.ExpiresOn.ToString("yyyy-MM-dd")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</section>

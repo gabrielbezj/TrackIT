@@ -1,0 +1,37 @@
+@model IReadOnlyList<Employee>
+@{
+    ViewData["Title"] = "Employees";
+}
+
+<section class="entity-page">
+    <h1>Employees</h1>
+    <p class="text-muted">Employee directory from mock data.</p>
+
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Job title</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.FirstName @item.LastName</td>
+                <td>@item.Email</td>
+                <td>@item.Department?.Name</td>
+                <td>@item.JobTitle</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</section>

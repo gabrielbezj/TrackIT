@@ -1,0 +1,34 @@
+@model Employee
+@{
+    ViewData["Title"] = "Employee Details";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="breadcrumb-item"><a asp-action="Index">Employees</a></li>
+        <li class="breadcrumb-item active" aria-current="page">@Model.FirstName @Model.LastName</li>
+    </ol>
+</nav>
+
+<section class="entity-page">
+    <h1>@Model.FirstName @Model.LastName</h1>
+    <dl class="row">
+        <dt class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+
+        <dt class="col-sm-3">Job title</dt>
+        <dd class="col-sm-9">@Model.JobTitle</dd>
+
+        <dt class="col-sm-3">Hire date</dt>
+        <dd class="col-sm-9">@Model.HireDate.ToString("yyyy-MM-dd")</dd>
+
+        <dt class="col-sm-3">Department</dt>
+        <dd class="col-sm-9">@Model.Department?.Name</dd>
+
+        <dt class="col-sm-3">Assignments</dt>
+        <dd class="col-sm-9">@Model.AssetAssignments.Count</dd>
+    </dl>
+
+    <a class="btn btn-outline-primary" asp-action="Index">Back to list</a>
+</section>

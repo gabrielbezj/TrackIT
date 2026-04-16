@@ -45,9 +45,14 @@ public class Lab1Report
 
 public static class Lab1DemoService
 {
+    public static List<Company> CreateSeedData()
+    {
+        return SeedData();
+    }
+
     public static async Task<Lab1Report> BuildReportAsync(CancellationToken cancellationToken = default)
     {
-        var companies = SeedData();
+        var companies = CreateSeedData();
 
         // Async-await primjer: simulacija sinkronizacije inventara bez blokiranja glavne dretve.
         await SimulateInventorySyncAsync(companies, cancellationToken);

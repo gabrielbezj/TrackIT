@@ -1,8 +1,62 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="dashboard-hero">
+    <p class="eyebrow">Operations workspace</p>
+    <h1>TrackIT Control Dashboard</h1>
+    <p class="lead">
+        Navigate across all entities, inspect relationships, and review details quickly.
+        Lab 2 is focused on read-only exploration with consistent list and detail pages.
+    </p>
+</section>
+
+<section class="dashboard-grid" aria-label="Entity navigation">
+    <a class="dash-card" asp-controller="Company" asp-action="Index">
+        <h2>Companies</h2>
+        <p>Organization profiles, headquarters, and structure context.</p>
+        <span class="dash-link">Open list</span>
+    </a>
+
+    <a class="dash-card" asp-controller="Department" asp-action="Index">
+        <h2>Departments</h2>
+        <p>Department catalog with company relationship visibility.</p>
+        <span class="dash-link">Open list</span>
+    </a>
+
+    <a class="dash-card" asp-controller="Employee" asp-action="Index">
+        <h2>Employees</h2>
+        <p>Directory view with role and department mapping.</p>
+        <span class="dash-link">Open list</span>
+    </a>
+
+    <a class="dash-card" asp-controller="Asset" asp-action="Index">
+        <h2>Assets</h2>
+        <p>Hardware inventory and ownership trail by company.</p>
+        <span class="dash-link">Open list</span>
+    </a>
+
+    <a class="dash-card" asp-controller="AssetAssignment" asp-action="Index">
+        <h2>Asset Assignments</h2>
+        <p>Allocation records that connect people to equipment.</p>
+        <span class="dash-link">Open list</span>
+    </a>
+
+    <a class="dash-card" asp-controller="MaintenanceRecord" asp-action="Index">
+        <h2>Maintenance Records</h2>
+        <p>Service history and status snapshots over time.</p>
+        <span class="dash-link">Open list</span>
+    </a>
+
+    <a class="dash-card" asp-controller="SoftwareLicense" asp-action="Index">
+        <h2>Software Licenses</h2>
+        <p>License tracking, renewals, and vendor references.</p>
+        <span class="dash-link">Open list</span>
+    </a>
+
+    <a class="dash-card" asp-controller="Vendor" asp-action="Index">
+        <h2>Vendors</h2>
+        <p>Partner directory and points of contact.</p>
+        <span class="dash-link">Open list</span>
+    </a>
+</section>

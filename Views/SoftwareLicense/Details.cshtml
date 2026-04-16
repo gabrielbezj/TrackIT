@@ -1,0 +1,37 @@
+@model SoftwareLicense
+@{
+    ViewData["Title"] = "Software License Details";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="breadcrumb-item"><a asp-action="Index">Software Licenses</a></li>
+        <li class="breadcrumb-item active" aria-current="page">@Model.ProductName</li>
+    </ol>
+</nav>
+
+<section class="entity-page">
+    <h1>@Model.ProductName</h1>
+    <dl class="row">
+        <dt class="col-sm-3">Asset</dt>
+        <dd class="col-sm-9">@Model.Asset?.InventoryTag - @Model.Asset?.Name</dd>
+
+        <dt class="col-sm-3">License type</dt>
+        <dd class="col-sm-9">@Model.LicenseType</dd>
+
+        <dt class="col-sm-3">License key</dt>
+        <dd class="col-sm-9">@Model.LicenseKey</dd>
+
+        <dt class="col-sm-3">Seats</dt>
+        <dd class="col-sm-9">@Model.SeatsUsed / @Model.SeatsPurchased</dd>
+
+        <dt class="col-sm-3">Expires on</dt>
+        <dd class="col-sm-9">@Model.ExpiresOn.ToString("yyyy-MM-dd")</dd>
+
+        <dt class="col-sm-3">Auto renewal</dt>
+        <dd class="col-sm-9">@(Model.IsAutoRenewal ? "Yes" : "No")</dd>
+    </dl>
+
+    <a class="btn btn-outline-primary" asp-action="Index">Back to list</a>
+</section>

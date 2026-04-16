@@ -1,0 +1,37 @@
+@model MaintenanceRecord
+@{
+    ViewData["Title"] = "Maintenance Record Details";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="breadcrumb-item"><a asp-action="Index">Maintenance Records</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Record #@Model.Id</li>
+    </ol>
+</nav>
+
+<section class="entity-page">
+    <h1>Maintenance Record #@Model.Id</h1>
+    <dl class="row">
+        <dt class="col-sm-3">Asset</dt>
+        <dd class="col-sm-9">@Model.Asset?.InventoryTag - @Model.Asset?.Name</dd>
+
+        <dt class="col-sm-3">Performed on</dt>
+        <dd class="col-sm-9">@Model.PerformedOn.ToString("yyyy-MM-dd")</dd>
+
+        <dt class="col-sm-3">Description</dt>
+        <dd class="col-sm-9">@Model.Description</dd>
+
+        <dt class="col-sm-3">Performed by</dt>
+        <dd class="col-sm-9">@Model.PerformedBy</dd>
+
+        <dt class="col-sm-3">Cost</dt>
+        <dd class="col-sm-9">@Model.Cost.ToString("C")</dd>
+
+        <dt class="col-sm-3">Type</dt>
+        <dd class="col-sm-9">@(Model.IsPreventive ? "Preventive" : "Corrective")</dd>
+    </dl>
+
+    <a class="btn btn-outline-primary" asp-action="Index">Back to list</a>
+</section>

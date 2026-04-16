@@ -1,0 +1,37 @@
+@model AssetAssignment
+@{
+    ViewData["Title"] = "Assignment Details";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="breadcrumb-item"><a asp-action="Index">Asset Assignments</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Assignment #@Model.Id</li>
+    </ol>
+</nav>
+
+<section class="entity-page">
+    <h1>Assignment #@Model.Id</h1>
+    <dl class="row">
+        <dt class="col-sm-3">Employee</dt>
+        <dd class="col-sm-9">@Model.Employee?.FirstName @Model.Employee?.LastName</dd>
+
+        <dt class="col-sm-3">Asset</dt>
+        <dd class="col-sm-9">@Model.Asset?.InventoryTag - @Model.Asset?.Name</dd>
+
+        <dt class="col-sm-3">Assigned on</dt>
+        <dd class="col-sm-9">@Model.AssignedOn.ToString("yyyy-MM-dd")</dd>
+
+        <dt class="col-sm-3">Due back</dt>
+        <dd class="col-sm-9">@(Model.DueBackOn?.ToString("yyyy-MM-dd") ?? "-")</dd>
+
+        <dt class="col-sm-3">Returned on</dt>
+        <dd class="col-sm-9">@(Model.ReturnedOn?.ToString("yyyy-MM-dd") ?? "-")</dd>
+
+        <dt class="col-sm-3">Notes</dt>
+        <dd class="col-sm-9">@Model.Notes</dd>
+    </dl>
+
+    <a class="btn btn-outline-primary" asp-action="Index">Back to list</a>
+</section>

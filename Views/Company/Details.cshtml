@@ -1,0 +1,37 @@
+@model Company
+@{
+    ViewData["Title"] = "Company Details";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="breadcrumb-item"><a asp-action="Index">Companies</a></li>
+        <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+    </ol>
+</nav>
+
+<section class="entity-page">
+    <h1>@Model.Name</h1>
+    <dl class="row">
+        <dt class="col-sm-3">Tax ID</dt>
+        <dd class="col-sm-9">@Model.TaxId</dd>
+
+        <dt class="col-sm-3">Headquarters</dt>
+        <dd class="col-sm-9">@Model.HeadquartersCity</dd>
+
+        <dt class="col-sm-3">Contact</dt>
+        <dd class="col-sm-9">@Model.ContactEmail</dd>
+
+        <dt class="col-sm-3">Founded</dt>
+        <dd class="col-sm-9">@Model.FoundedOn.ToString("yyyy-MM-dd")</dd>
+
+        <dt class="col-sm-3">Departments</dt>
+        <dd class="col-sm-9">@Model.Departments.Count</dd>
+
+        <dt class="col-sm-3">Vendors</dt>
+        <dd class="col-sm-9">@Model.Vendors.Count</dd>
+    </dl>
+
+    <a class="btn btn-outline-primary" asp-action="Index">Back to list</a>
+</section>

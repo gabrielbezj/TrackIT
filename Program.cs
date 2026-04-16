@@ -1,9 +1,19 @@
+using TrackIT.Repositories;
 using TrackIT.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<MockDataStore>();
+builder.Services.AddSingleton<CompanyMockRepository>();
+builder.Services.AddSingleton<DepartmentMockRepository>();
+builder.Services.AddSingleton<EmployeeMockRepository>();
+builder.Services.AddSingleton<AssetMockRepository>();
+builder.Services.AddSingleton<AssetAssignmentMockRepository>();
+builder.Services.AddSingleton<MaintenanceRecordMockRepository>();
+builder.Services.AddSingleton<SoftwareLicenseMockRepository>();
+builder.Services.AddSingleton<VendorMockRepository>();
 
 var app = builder.Build();
 
